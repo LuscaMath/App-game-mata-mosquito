@@ -88,15 +88,6 @@ function posicaoRandomica () {
     //fim
 }
 
-document.getElementById('cronometro').innerHTML = tempo
-
-
-var criaMosquito = setInterval(function() {
-    posicaoRandomica()
-}, criaMosquitoTempo)
-
-
-
 function tamanhoAleatorio() {
     var classe = Math.floor(Math.random() * 3)
 

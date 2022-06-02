@@ -9,6 +9,7 @@
         <title>Game Mata Mosquito</title>
         
         <link rel="stylesheet" href="css/estilo.css">
+        <script src="JavaScript/script.js"></script>
 
 
     </head>
@@ -27,6 +28,13 @@
             </div>
         </div>
 
-        <script src="JavaScript/script.js"></script>
+        <script>
+			document.getElementById('cronometro').innerHTML = tempo
+
+			var criaMosquito = setInterval(function() { 
+				posicaoRandomica()
+			}, criaMosquitoTempo)
+		</script>
+
     </body>
 </html>
